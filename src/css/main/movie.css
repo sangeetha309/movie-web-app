@@ -1,0 +1,149 @@
+.showcase-img {
+  width: 100%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.showcase-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.showcase-img * {
+  z-index: 1;
+}
+
+.movie-container {
+  display: flex;
+  height: 100%;
+  padding: 7px 0 10px 20px;
+  /* background-color: #141422; */
+}
+
+.movie-details h1 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.movie-details p {
+  font-size: 17px;
+  margin: 15px 0 15px 5px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.movie-details div {
+  margin: 25px 0 15px 5px;
+}
+
+.circle-icon {
+  font-size: 5px;
+}
+
+.movie-section-container {
+  background-color: #10101c;
+}
+
+.movie-info-container {
+  width: 90%;
+  margin: auto;
+  height: 115vh;
+}
+
+.movie-info-container h2 {
+  padding: 20px 0;
+}
+
+.cast-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+.cast {
+  width: 25%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cast-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.details {
+  margin-top: 5px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.rating-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40vh;
+}
+
+.review {
+  width: 48%;
+  height: 50%;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .showcase-img {
+    height: 40vh;
+  }
+
+  .movie-card {
+    display: none;
+  }
+
+  .movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie-details #heading {
+    font-size: 50px;
+  }
+
+  .movie-section-container {
+    height: 1350px;
+  }
+
+  .cast-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .rating-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .review {
+    width: 90%;
+    height: 100%;
+  }
+}
